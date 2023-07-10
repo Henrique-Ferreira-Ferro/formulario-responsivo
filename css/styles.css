@@ -1,0 +1,273 @@
+:root{
+    --header-color: black;
+    --color-write:#fff;
+    --color-gray:#9b9dad;
+    --color-grayBlack:hsl( 227.37deg 12.26% 30.39% );
+    --color-StormBlue: rgba(27, 27, 50, 0.74);
+    --color-greenBotton: #37af65;
+}
+
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: 'Poppins';
+}
+
+body{
+    background-image: url(../img/pexels-hasan-albari-1229861.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center ;
+    color: var(--color-write);
+    
+    
+}
+
+header{
+    background-color: var(--header-color);
+}
+
+.container{
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.conteiner-icon img{
+    height: 25px;
+    width: 20px;
+    margin: 0px 10px 0px 0px;
+}
+
+.conteiner-icon{
+    display: flex;
+    margin: 10px;
+}
+.conteiner-sign{
+    display: flex;
+}
+
+.conteiner-icon h1{
+    font-size: 14px;
+    margin: 0px;
+}
+
+.conteiner-icon h2{
+    font-size: 11px;
+    color: var(--color-gray);
+    margin: 0px;
+}
+
+
+.header-nav{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    height: 3rem;
+   
+}
+
+button img{
+    width: 25px;
+    height: 25px;
+    
+}
+
+.btn-black{
+    background-color: var(--color-grayBlack);
+    color: var(--color-write);
+    border-radius: 4px;
+    margin: 10px 5px 10px 5px;
+   
+}
+
+.btn-green{
+    background-color: var(--color-greenBotton);
+    width: 75px;
+    height: 35px;
+    color: black;
+    margin: 10px 0px 0px 0px;
+
+}
+
+.main-img{
+    width:39px;
+    height: 30px;
+    margin: 10px 0px 10px 10px;
+}
+
+.container-princ{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.container-princ h1{
+    font-size:32px;
+    margin: 0px 0px 8px;
+}
+
+.container-princ h2{
+    font-size:17px;
+    margin: 0px 0px 8px;
+}
+
+
+.container-section{
+    background-color: var(--color-StormBlue); /* azul escuro com 20% de opacidade */
+    backdrop-filter: blur(2px);
+    border-radius: 6px;
+    max-width: 720px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 2rem;
+}
+
+.div-label{
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    margin: 0px 0px 20px;
+    width: 100%;
+}
+
+.div-label label{
+    margin: 0px 0px 8px;
+}
+
+.div-label input{
+    height: 2.357rem;
+    border-radius: 3px;
+    border: 1px solid var(--color-gray); 
+}
+
+.div-label input::placeholder{
+    padding: 12px 0px 0px 12px;
+    font-size: 16px;
+}
+
+.div-label-option{
+    height: 2.357rem;
+    border-radius: 3px;
+    border: 1px solid var(--color-gray); 
+    font-size: 16px;
+    padding: 5px 8px;
+}
+
+
+.div-label-option option{
+    font-size: 18px;
+}
+
+
+.div-label-recommed{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    margin: 10px 0px;
+
+}
+
+.div-label-recommed input{
+    width:15px;
+    height: 15px;
+}
+
+.div-label-recommed-child{
+    margin: 0px 0px 10px 0px;
+}
+
+#distance{
+    margin: 10px 0px ;
+}
+
+.div-label-Comments{
+    font-size: 18px;
+    margin: 10px 0px;
+    width: 100%;
+}
+
+.div-label-Comments textarea{
+    margin: 10px 0px;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.div-label-Comments textarea::placeholder{
+
+    font-size: 16px;
+    padding: 5px 0px 0px 2px;
+    font-weight: bold;
+}
+
+.btn-submit{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    justify-content: center;
+    
+}
+
+.btn-submit button{
+    width: 100%;
+    color: var(--color-write);
+    background-color: var(--color-greenBotton);
+    font-size: 18px;
+    border-radius: 5px;
+    border: unset; 
+}
+
+
+/*Responsividade para web-Navegadores */
+
+@media(max-width: 500px){
+    .anonymity {
+        display:none;
+    }
+}
+
+
+
+@media(min-width: 768px){
+    .header-nav{
+        height: 70px;
+        justify-content: space-between;
+        
+    }
+
+    .conteiner-icon{
+        align-items: center;
+    }
+
+    .conteiner-icon-child h2{
+        font-size: 14px;
+    }
+
+    .conteiner-icon-child h1{
+        font-size: 19px;
+    }
+
+    .conteiner-sign img{
+        align-items: center;
+    }
+
+    form{
+        margin: 20px 0px;
+    }
+
+
+}
+
+
+
+
+
+
+
+
